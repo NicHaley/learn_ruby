@@ -4,7 +4,13 @@ def reverser
 	array.join(" ")
 end
 
-def adder
+def adder(n=1)
 	num = yield
-	1 + num
+	n + num
+end
+
+def repeater(n = 1)
+	n.times do
+		yield
+	end
 end
